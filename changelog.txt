@@ -1,3 +1,7 @@
+0.5
+-----------------------------------------
+Persist "AlwaysOnTop" and "HideReload" settings
+
 0.4
 -----------------------------------------
 Added comboboxes (need to add datasets)

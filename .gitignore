@@ -206,3 +206,7 @@ Makefile*
 
 #Ignore Twitter
 StreamControl/twitterOauth.h
+
+object_script.*
+.qmake.stash
+make.bat

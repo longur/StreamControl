@@ -1,4 +1,4 @@
-version: '0.4.{build}'
+version: '0.5.{build}'
 
 environment:
   QTDIR: C:\Qt\5.8\mingw53_32
