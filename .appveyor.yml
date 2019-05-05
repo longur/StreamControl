@@ -1,0 +1,24 @@
+version: '0.5.{build}'
+
+environment:
+  QTDIR: C:\Qt\5.8\mingw53_32
+
+install:
+  - set PATH=%PATH%;%QTDIR%\bin;C:\MinGW\bin;C:\MinGW\msys\1.0\bin
+  - cd ./StreamControl
+
+build_script:
+  - qmake
+  # - make -optl-static
+  - mingw32-make
+
+after_build:
+  - windeployqt release/StreamControl.exe
+  - rm release/*.o
+  - rm release/*.h
+  - rm release/*.moc
+  - rm release/*.cpp
+
+artifacts:
+  - path: StreamControl\release
+    name: StreamControl
