@@ -79,7 +79,7 @@ private:
 
     QString urlString = "https://api.smash.gg/gql/alpha";
     QString tourneysRequest =
-            R"(query TournamentsByOwner($ownerId: Int, $perPage: Int) {
+            R"(query TournamentsByOwner($ownerId: ID!, $perPage: Int!) {
                 tournaments(query: {
                     perPage: $perPage
                     filter: {
